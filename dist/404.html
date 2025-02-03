@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      const path = location.pathname;
+      if (!path.startsWith('/hw1/')) {
+        location.replace('/hw1/' + location.hash);
+      }
+    </script>
+  </head>
+  <body>
+    <title>404 - 页面未找到</title>
+  </body>
+</html>
